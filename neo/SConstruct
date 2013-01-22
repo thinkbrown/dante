@@ -392,7 +392,8 @@ if ( TARGET_OPENGL != '0' ):
 if ( TARGET_ANDROID != '0' ):
 	Export( 'GLOBALS ' + GLOBALS )
 
-if ( TARGET_ANDROID != '' ):
+if ( TARGET_RASPI != '0' ):
+	local_opengl = 0
 	Export( 'GLOBALS ' + GLOBALS )
 
 # build curl if needed

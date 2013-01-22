@@ -2,7 +2,7 @@
 set -e
 
 scons \
-	ARCH='armv6j' \
+	ARCH='arm' \
 	BUILD='release' \
 	\
 	NOCURL=1 \

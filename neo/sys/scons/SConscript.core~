@@ -264,15 +264,11 @@ if ( local_dedicated == 0 ):
 		linux/gl_extensions.cpp'
 	if g_os == 'Android':
 		sys_string += ' android/input.cpp'
-	elif g_os == 'Raspi':
-		sys_string += ' raspi/input.cpp'
 	else:
 		sys_string += ' linux/input.cpp'
 	if ( local_opengl == 0 ):
 		if g_os == 'Android':
 			sys_string += ' android/gles2.cpp'
-		if g_os == 'Raspi':
-			sys_string += ' raspi/gles2.cpp'
 		else:
 			sys_string += ' linux/gles2.cpp'
 	else:
