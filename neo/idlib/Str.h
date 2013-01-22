@@ -38,6 +38,9 @@ If you have questions concerning this license or the applicable additional terms
 */
 
 // these library functions should not be used for cross platform compatibility
+#define use_idStr_Icmp idStr::Icmp
+#define use_idStr_Cmpn idStr::Cmpn
+
 #define strcmp			idStr::Cmp		// use_idStr_Cmp
 #define strncmp			use_idStr_Cmpn
 

@@ -14,9 +14,8 @@ scons \
 	CXX=$CXX \
 	\
 	NOCURL=1 \
-	TARGET_ANDROID=1 \
+	TARGET_ANDROID=0 \
 	TARGET_D3XP=0 \
 	\
-	BASEFLAGS='-I/pub/android-toolchain-r8b/arm-linux-androideabi/include/c++/4.6/arm-linux-androideabi -I/pub/android-toolchain-r8b/arm-linux-androideabi/include/c++/4.6' \
-	NDK='/pub/android-ndk-r8b' \
+	BASEFLAGS='' \
 	$*

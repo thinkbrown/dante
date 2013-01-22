@@ -33,7 +33,15 @@ If you have questions concerning this license or the applicable additional terms
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#ifdef __RASPI__
+#include <GLES2/gl2.h>
+#include <EGL/egl.h>
+#include <EGL/eglext_brcm.h>
 
+#include <X11/Xlib.h>
+#include <X11/Xatom.h>
+#include <X11/Xutil.h>
+#endif
 idCVar sys_videoRam("sys_videoRam", "0", CVAR_SYSTEM | CVAR_ARCHIVE | CVAR_INTEGER, "Texture memory on the video card (in megabytes) - 0: autodetect", 0, 512);
 
 Display *dpy = NULL;
